@@ -51,8 +51,26 @@
     [self.onboardContentArray enumerateObjectsUsingBlock:^(NSDictionary *pageDict, NSUInteger idx, BOOL *stop) {
         NDIntroPageView *pageView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"NDIntroPageView" owner:nil options:nil] lastObject];
         pageView.frame = CGRectMake(self.frame.size.width * idx, 0, self.frame.size.width, self.frame.size.height);
-        pageView.titlelabel.text = (pageDict[kNDIntroPageTitle]) ? pageDict[kNDIntroPageTitle] : @"nil";
-        pageView.descriptionLabel.text = (pageDict[kNDIntroPageDescription]) ? pageDict[kNDIntroPageDescription] : @"";
+        //pageView.titlelabel.text = (pageDict[kNDIntroPageTitle]) ? pageDict[kNDIntroPageTitle] : @"nil";
+        if ([pageDict[kNDIntroPageTitle] isKindOfClass:[NSString class]]) {
+            pageView.titlelabel.text = pageDict[kNDIntroPageTitle];
+        }
+        else if ([pageDict[kNDIntroPageTitle] isKindOfClass:[NSAttributedString class]]) {
+            pageView.titlelabel.attributedText = pageDict[kNDIntroPageTitle];
+        }
+        else {
+            pageView.titlelabel.text = @"";
+        }
+        //pageView.descriptionLabel.text = (pageDict[kNDIntroPageDescription]) ? pageDict[kNDIntroPageDescription] : @"";
+        if ([pageDict[kNDIntroPageDescription] isKindOfClass:[NSString class]]) {
+            pageView.descriptionLabel.text = pageDict[kNDIntroPageDescription];
+        }
+        else if ([pageDict[kNDIntroPageDescription] isKindOfClass:[NSAttributedString class]]) {
+            pageView.descriptionLabel.attributedText = pageDict[kNDIntroPageDescription];
+        }
+        else {
+            pageView.descriptionLabel.text = @"";
+        }
         pageView.imageView.image = [[UIImage imageNamed:(pageDict[kNDIntroPageImageName]) ? pageDict[kNDIntroPageImageName] : @""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         pageView.imageHorizontalConstraint.constant = ([pageDict[kNDIntroPageImageHorizontalConstraintValue] floatValue]) ? [pageDict[kNDIntroPageImageHorizontalConstraintValue] floatValue] : -130.f;
         pageView.titleLabelHeightConstraint.constant = ([pageDict[kNDIntroPageTitleLabelHeightConstraintValue] floatValue]) ? [pageDict[kNDIntroPageTitleLabelHeightConstraintValue] floatValue] : 80.f;
