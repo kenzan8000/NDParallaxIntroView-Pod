@@ -19,6 +19,7 @@ static NSString *const kNDIntroPageImageHorizontalConstraintValue = @"imageHoriz
 @required
 
 -(void)launchAppButtonPressed;
+-(void)pageChanged:(NSInteger)page;
 
 @end
 
