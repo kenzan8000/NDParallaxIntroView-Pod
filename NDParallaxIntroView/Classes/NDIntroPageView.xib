@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,7 +35,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ST-7T-nem">
-                    <rect key="frame" x="20" y="384" width="335" height="193"/>
+                    <rect key="frame" x="20" y="284" width="335" height="293.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VAK-5f-bEj">
@@ -48,20 +47,20 @@
             </subviews>
             <color key="backgroundColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="6ST-7T-nem" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="3Cp-T4-brV"/>
                 <constraint firstItem="Vkc-vv-81W" firstAttribute="top" secondItem="cbc-So-i87" secondAttribute="bottom" constant="20" id="5eU-Ac-PK3"/>
                 <constraint firstItem="VAK-5f-bEj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-130" id="EII-5U-v0y"/>
-                <constraint firstItem="6ST-7T-nem" firstAttribute="top" secondItem="cbc-So-i87" secondAttribute="bottom" constant="20.5" id="EgU-qN-ceJ"/>
+                <constraint firstAttribute="bottom" secondItem="6ST-7T-nem" secondAttribute="bottom" constant="89.5" id="FeD-tS-sEE"/>
                 <constraint firstItem="Vkc-vv-81W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="H7J-jA-5Dm"/>
                 <constraint firstItem="cbc-So-i87" firstAttribute="top" secondItem="VAK-5f-bEj" secondAttribute="bottom" constant="30" id="IiJ-Ja-oLT"/>
+                <constraint firstItem="6ST-7T-nem" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="KLR-Fi-7Le"/>
                 <constraint firstAttribute="trailing" secondItem="Vkc-vv-81W" secondAttribute="trailing" constant="20" id="W0a-YR-7AK"/>
                 <constraint firstItem="cbc-So-i87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="W8V-L2-Obw"/>
-                <constraint firstAttribute="bottom" secondItem="6ST-7T-nem" secondAttribute="bottom" constant="90" id="e0x-ob-dcM"/>
                 <constraint firstAttribute="trailing" secondItem="VAK-5f-bEj" secondAttribute="trailing" constant="20" id="eeo-Bx-Cof"/>
                 <constraint firstAttribute="bottom" secondItem="Vkc-vv-81W" secondAttribute="bottom" constant="90" id="fdz-GH-iut"/>
-                <constraint firstAttribute="trailing" secondItem="6ST-7T-nem" secondAttribute="trailing" constant="20" id="tAr-qx-VzY"/>
+                <constraint firstItem="6ST-7T-nem" firstAttribute="top" secondItem="VAK-5f-bEj" secondAttribute="bottom" constant="30.5" id="mY3-Kd-8HT"/>
                 <constraint firstAttribute="trailing" secondItem="cbc-So-i87" secondAttribute="trailing" constant="20" id="uI9-6b-SVo"/>
                 <constraint firstItem="VAK-5f-bEj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ubI-NN-GNI"/>
+                <constraint firstAttribute="trailing" secondItem="6ST-7T-nem" secondAttribute="trailing" constant="20" id="uhs-Mp-LfO"/>
             </constraints>
             <connections>
                 <outlet property="customView" destination="6ST-7T-nem" id="Iyi-fp-a8D"/>
@@ -71,6 +70,7 @@
                 <outlet property="titleLabelHeightConstraint" destination="FCz-kH-MNV" id="gin-bs-k0H"/>
                 <outlet property="titlelabel" destination="cbc-So-i87" id="zKd-yE-dvy"/>
             </connections>
+            <point key="canvasLocation" x="-227.5" y="31.5"/>
         </view>
     </objects>
 </document>

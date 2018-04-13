@@ -77,6 +77,8 @@
         if ([pageDict[kNDIntroPageCustomView] isKindOfClass:[UIView class]]) {
             [pageView.customView addSubview: pageDict[kNDIntroPageCustomView]];
             [pageView.customView setHidden:false];
+            [pageView.titlelabel setHidden:true];
+            [pageView.descriptionLabel setHidden:true];
         }
         
         if (self.onboardContentArray.count - 1 == idx) [pageView addSubview:self.lastPageButton];
