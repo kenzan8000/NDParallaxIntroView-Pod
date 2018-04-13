@@ -79,6 +79,12 @@
         pageView.imageView.image = [[UIImage imageNamed:(pageDict[kNDIntroPageImageName]) ? pageDict[kNDIntroPageImageName] : @""] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         pageView.imageHorizontalConstraint.constant = ([pageDict[kNDIntroPageImageHorizontalConstraintValue] floatValue]) ? [pageDict[kNDIntroPageImageHorizontalConstraintValue] floatValue] : -130.f;
         pageView.titleLabelHeightConstraint.constant = ([pageDict[kNDIntroPageTitleLabelHeightConstraintValue] floatValue]) ? [pageDict[kNDIntroPageTitleLabelHeightConstraintValue] floatValue] : 80.f;
+        
+        if ([pageDict[kNDIntroPageCustomView] isKindOfClass:[UIView class]]) {
+            [pageView.customView addSubview: pageDict[kNDIntroPageCustomView]];
+            [pageView.customView setHidden:false];
+        }
+        
         if (self.onboardContentArray.count - 1 == idx) [pageView addSubview:self.lastPageButton];
         [self.scrollView addSubview:pageView];
     }];

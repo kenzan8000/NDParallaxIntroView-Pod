@@ -4,38 +4,38 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Headers",
+      'name': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "NDIntroPageView.h",
-          'external-contents': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/NDParallaxIntroView/Classes/NDIntroPageView.h"
+          'external-contents': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/NDParallaxIntroView/Classes/NDIntroPageView.h"
         },
         {
           'type': 'file',
           'name': "NDIntroView.h",
-          'external-contents': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/NDParallaxIntroView/Classes/NDIntroView.h"
+          'external-contents': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/NDParallaxIntroView/Classes/NDIntroView.h"
         },
         {
           'type': 'file',
           'name': "NDParallaxIntroView-Swift.h",
-          'external-contents': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Headers/NDParallaxIntroView-Swift.h"
+          'external-contents': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Headers/NDParallaxIntroView-Swift.h"
         },
         {
           'type': 'file',
           'name': "NDParallaxIntroView-umbrella.h",
-          'external-contents': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/Example/Pods/Target Support Files/NDParallaxIntroView/NDParallaxIntroView-umbrella.h"
+          'external-contents': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/Example/Pods/Target Support Files/NDParallaxIntroView/NDParallaxIntroView-umbrella.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Modules",
+      'name': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/Example/build/Debug-iphonesimulator/NDParallaxIntroView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/macuser/Downloads/NDParallaxIntroView-Pod/Example/build/Pods.build/Debug-iphonesimulator/NDParallaxIntroView.build/module.modulemap"
+          'external-contents': "/Users/kenzan8000/Downloads/NDParallaxIntroView-Pod/Example/build/Pods.build/Debug-iphonesimulator/NDParallaxIntroView.build/module.modulemap"
         }
       ]
     }

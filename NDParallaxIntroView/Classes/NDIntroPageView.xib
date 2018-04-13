@@ -1,52 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TrebuchetMSBold.ttf">
+            <string>TrebuchetMS-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NDIntroPageView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbc-So-i87">
-                    <rect key="frame" x="20" y="250" width="560" height="80"/>
+                    <rect key="frame" x="20" y="283.5" width="335" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="FCz-kH-MNV"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="24"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DescriptionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Vkc-vv-81W">
-                    <rect key="frame" x="20" y="350" width="560" height="160"/>
+                    <rect key="frame" x="20" y="383.5" width="335" height="193.5"/>
                     <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ST-7T-nem">
+                    <rect key="frame" x="20" y="384" width="335" height="193"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VAK-5f-bEj">
-                    <rect key="frame" x="20" y="120" width="560" height="100"/>
+                    <rect key="frame" x="20" y="153.5" width="335" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="hmh-sX-819"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="6ST-7T-nem" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="3Cp-T4-brV"/>
                 <constraint firstItem="Vkc-vv-81W" firstAttribute="top" secondItem="cbc-So-i87" secondAttribute="bottom" constant="20" id="5eU-Ac-PK3"/>
                 <constraint firstItem="VAK-5f-bEj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-130" id="EII-5U-v0y"/>
+                <constraint firstItem="6ST-7T-nem" firstAttribute="top" secondItem="cbc-So-i87" secondAttribute="bottom" constant="20.5" id="EgU-qN-ceJ"/>
                 <constraint firstItem="Vkc-vv-81W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="H7J-jA-5Dm"/>
                 <constraint firstItem="cbc-So-i87" firstAttribute="top" secondItem="VAK-5f-bEj" secondAttribute="bottom" constant="30" id="IiJ-Ja-oLT"/>
                 <constraint firstAttribute="trailing" secondItem="Vkc-vv-81W" secondAttribute="trailing" constant="20" id="W0a-YR-7AK"/>
                 <constraint firstItem="cbc-So-i87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="W8V-L2-Obw"/>
+                <constraint firstAttribute="bottom" secondItem="6ST-7T-nem" secondAttribute="bottom" constant="90" id="e0x-ob-dcM"/>
                 <constraint firstAttribute="trailing" secondItem="VAK-5f-bEj" secondAttribute="trailing" constant="20" id="eeo-Bx-Cof"/>
                 <constraint firstAttribute="bottom" secondItem="Vkc-vv-81W" secondAttribute="bottom" constant="90" id="fdz-GH-iut"/>
+                <constraint firstAttribute="trailing" secondItem="6ST-7T-nem" secondAttribute="trailing" constant="20" id="tAr-qx-VzY"/>
                 <constraint firstAttribute="trailing" secondItem="cbc-So-i87" secondAttribute="trailing" constant="20" id="uI9-6b-SVo"/>
                 <constraint firstItem="VAK-5f-bEj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ubI-NN-GNI"/>
             </constraints>
             <connections>
+                <outlet property="customView" destination="6ST-7T-nem" id="Iyi-fp-a8D"/>
                 <outlet property="descriptionLabel" destination="Vkc-vv-81W" id="elZ-7r-nK1"/>
                 <outlet property="imageHorizontalConstraint" destination="EII-5U-v0y" id="sUu-g9-CDg"/>
                 <outlet property="imageView" destination="VAK-5f-bEj" id="SVy-X1-yUa"/>

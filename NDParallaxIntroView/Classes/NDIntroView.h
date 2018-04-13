@@ -11,6 +11,7 @@
 static NSString *const kNDIntroPageTitle = @"title";
 static NSString *const kNDIntroPageDescription = @"description";
 static NSString *const kNDIntroPageImageName = @"imageName";
+static NSString *const kNDIntroPageCustomView = @"customView";
 static NSString *const kNDIntroPageTitleLabelHeightConstraintValue = @"titleLabelHeightConstraint";
 static NSString *const kNDIntroPageImageHorizontalConstraintValue = @"imageHorizontalConstraint";
 
@@ -19,7 +20,6 @@ static NSString *const kNDIntroPageImageHorizontalConstraintValue = @"imageHoriz
 @required
 
 -(void)launchAppButtonPressed;
--(void)pageChanged:(NSInteger)page;
 
 @end
 
