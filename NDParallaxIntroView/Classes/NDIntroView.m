@@ -76,6 +76,7 @@
         
         if ([pageDict[kNDIntroPageCustomView] isKindOfClass:[UIView class]]) {
             [pageView.customView addSubview: pageDict[kNDIntroPageCustomView]];
+            [pageDict[kNDIntroPageCustomView] setCenter:[pageView.customView center]];
             [pageView.customView setHidden:false];
             [pageView.titlelabel setHidden:true];
             [pageView.descriptionLabel setHidden:true];
