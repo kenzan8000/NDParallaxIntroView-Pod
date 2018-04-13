@@ -41,13 +41,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat pageWidth = CGRectGetWidth(self.bounds);
     CGFloat pageFraction = self.scrollView.contentOffset.x / pageWidth;
-    NSInteger newPage = roundf(pageFraction);
-    if (self.pageControl.currentPage != newPage) {
-        if (self.delegate != nil && [self.delegate respondsToSelector:@selector(pageChanged:)]) {
-            [self.delegate pageChanged:newPage];
-        }
-    }
-    self.pageControl.currentPage = newPage;
+    self.pageControl.currentPage = roundf(pageFraction);
     CGFloat backgroundScrollValue = 0.5f;//self.backgroundImage.size.width/self.onboardContentArray.count/self.frame.size.width;
     [self.parallaxBackgroundScrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x  * backgroundScrollValue, self.scrollView.contentOffset.y) animated:NO];
 }
